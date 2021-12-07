@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <section class="hero is-medium is-success">
+            <div class="hero-body">
+              <p class="title">
+                Welcome to Talent!
+              </p>
+              <p class="subtitle">
+                Here you can see search repositories from GitHub!
+              </p>
+            </div>
+          </section>
+    </div>
+
+      <div id="content">
+
+        <div class="searchArea">
+          <input class="input" type="text" id="searchInput" placeholder="Type something">
+          <button class="button is-success" id="fetchReposBtn">Search Repo</button>
+
+        </div>
+
+        <div class="columns is-multiline" id="resultArea">
+            
+        
+          </div>
+      </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
