@@ -82,7 +82,7 @@ const renderRepositories = (items) => {
         const cardContentDiv = document.createElement('div');
         cardContentDiv.classList.add('column')
         cardContentDiv.classList.add('is-one-quarter')
-        cardContentDiv.innerHTML = CARD_TEMPLATE.format(result.url, result.full_name, result.description, result.created_at)
+        cardContentDiv.innerHTML = CARD_TEMPLATE.format(result.url, result.full_name, result.description, formatDate(result.created_at))
 
         resultArea.appendChild(cardContentDiv);
     })

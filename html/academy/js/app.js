@@ -68,7 +68,7 @@ const renderNews = (hits) => {
         const cardContentDiv = document.createElement('div');
         cardContentDiv.classList.add('column')
         cardContentDiv.classList.add('is-one-quarter')
-        cardContentDiv.innerHTML = CARD_TEMPLATE.format(result.url, result.title, result.created_at)
+        cardContentDiv.innerHTML = CARD_TEMPLATE.format(result.url, result.title, formatDate(result.created_at))
 
         resultArea.appendChild(cardContentDiv);
     })
